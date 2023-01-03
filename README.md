@@ -10,7 +10,7 @@ Infraestrutura:
 
 - Setar as Permissoes do Gitpod ao Repositorio no Github (https://gitpod.io/integrations) X
 
-- Subir o Airbyte via docker
+- Subir o Airbyte via docker - https://docs.airbyte.com/quickstart/deploy-airbyte/ (Realizar antes um fork do repositório do airbyte para a minha conta, para poder fazer alterações, e depois cria uma nova branch para esse repo. Depois faz o git clone com o meu repo.  git clone -b modern-data-stack https://github.com/guimarczewski/airbyte.git)
 
 - Subir o Airflow via docker
 
