@@ -26,7 +26,7 @@ user e senha foram setados no arquivo docker-compose.yaml) x
 
 - Criar arquivo ".gitignore" dentro da pasta airflow e incluir "logs/*" para ignorar todos os arquivos dentro da pasta logs ao fazer o commit. Só depois disso faz o commit. x
 
-- Subir o Metabase via docker
+- Subir o Metabase via docker e utilizar o docker-compose - https://gist.github.com/eliashussary/379e44a99e2389bd6a8ea6a23c2d5af8 (Cria um diretório metabase e arquivo docker-compose.yaml, dentro desse arquivo remove o postgres e da linha environment para baixo, pois usaremos o snowflake, e altera a porta para 3000. Após isso "cd metabase" e docker-compose up" ) x
 
 - Criar o script de execução
 
