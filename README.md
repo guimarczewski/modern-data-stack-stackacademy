@@ -34,28 +34,28 @@ user e senha foram setados no arquivo docker-compose.yaml) x
 
 - Snowflake Data Warehouse:
     
-    - Criar a Conta no SnowFlake
-    - Verificar a existência das tabelas
-    - Obter os links de conexão e nome da conta
+    - Criar a Conta no SnowFlake x
+    - Verificar a existência das tabelas x
+    - Obter os links de conexão e nome da conta x
 
 
 Extração:
 
 - No Airbyte:
 
-    - Conectar com as origens baseadas nos Csvs
-    - Criar as entidades no snowflake através do script base da documentação
-    - Conectar o destino no snowflake
-    - Criar as conexões do airbyte associando as origens ao destino
-    - Testar as conexões
+    - Conectar com as origens baseadas nos Csvs x
+    - Criar as entidades no snowflake através do script base da documentação x
+    - Conectar o destino no snowflake x
+    - Criar as conexões do airbyte associando as origens ao destino x
+    - Testar as conexões x
 
 
 Preparação:
 
 - No Airbyte (Destination Loading Method):
 
-    - Local Staging (Ambiente de Desenvolvimento)
-    - Cloud Staging (Ambiente de Produção)
+    - Local Staging (Ambiente de Desenvolvimento) x
+    - Cloud Staging (Ambiente de Produção) x
 
 
 Transformação:
