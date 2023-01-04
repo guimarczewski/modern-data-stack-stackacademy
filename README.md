@@ -10,9 +10,21 @@ Infraestrutura:
 
 - Setar as Permissoes do Gitpod ao Repositorio no Github (https://gitpod.io/integrations) X
 
-- Subir o Airbyte via docker - https://docs.airbyte.com/quickstart/deploy-airbyte/ (Realizar antes um fork do repositório do airbyte para a minha conta, para poder fazer alterações, e depois cria uma nova branch para esse repo. Depois faz o git clone com o meu repo.  git clone -b modern-data-stack https://github.com/guimarczewski/airbyte.git. Depois altera o .env retirando user e senha, depois docker compose) x
+- Subir o Airbyte via docker - https://docs.airbyte.com/quickstart/deploy-airbyte/ (Realizar antes um fork do repositório do airbyte para a minha conta, para poder fazer alterações, e depois cria uma nova branch para esse repo. Depois faz o git clone com o meu repo.  
+git clone -b modern-data-stack https://github.com/guimarczewski/airbyte.git 
+Depois altera o .env retirando user e senha, depois 
+cd airbyte
+docker-compose up) x
 
-- Subir o Airflow via docker
+- Subir o Airflow via docker - https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html (cria uma pasta "airflow", 
+cd airflow, curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.5.0/docker-compose.yaml'
+mkdir -p ./dags ./logs ./plugins
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+docker compose up airflow-init
+docker-compose up
+user e senha foram setados no arquivo docker-compose.yaml) x
+
+- Criar arquivo ".gitignore" dentro da pasta airflow e incluir "logs/*" para ignorar todos os arquivos dentro da pasta logs ao fazer o commit. Só depois disso faz o commit. x
 
 - Subir o Metabase via docker
 
