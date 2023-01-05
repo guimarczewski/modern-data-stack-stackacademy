@@ -62,17 +62,17 @@ Transformação:
 
 - No Dbt:
 
-    - Criação da Conta
-    - Conexão com o Github
-    - Criação do Dbt Project
-    - Criação do Profile de conexão com o snowflake
-    - Criação do Schema
-    - Criação dos Modelos Base
-    - Criação do Modelo Relacionado
-    - Visualização gráfica do modelo
-    - Teste de execução
-    - Commits, Branches, Pull Requests, Merges no Github
-    - Obtenção do link de conexão com o Airbyte
+    - Criação da Conta x
+    - Conexão com o Github, sempre a partir de um repo vazio x
+    - Criação do Dbt Project x
+    - Criação do Profile de conexão com o snowflake x
+    - Criação do Schema x
+    - Criação dos Modelos Base x
+    - Criação do Modelo Relacionado x
+    - Visualização gráfica do modelo x
+    - Teste de execução x
+    - Commits, Branches, Pull Requests, Merges no Github x
+    - Obtenção do link de conexão com o Airbyte (Coloca o link do repositório git na aba transformation dentro da conexão no airbyte, para quando finalizar o job rodar a transformação dbt) x
 
 
 Visualização:
