@@ -28,7 +28,7 @@ user e senha foram setados no arquivo docker-compose.yaml) x
 
 - Subir o Metabase via docker e utilizar o docker-compose - https://gist.github.com/eliashussary/379e44a99e2389bd6a8ea6a23c2d5af8 (Cria um diretório metabase e arquivo docker-compose.yaml, dentro desse arquivo remove o postgres e da linha environment para baixo, pois usaremos o snowflake, e altera a porta para 3000. Após isso "cd metabase" e docker-compose up" ) x
 
-- Criar o script de execução - script linux para subir containers automaticamente... Será feito no final
+- Criar o script de execução - script linux para subir containers automaticamente - setup.sh - comando "chmod 777 setup.sh" para transformar o arquivo em executável
 
 - Testar a Execução
 
@@ -90,7 +90,7 @@ Orquestração:
 
 - No Airflow:
 
-    - Lib para conectar airbyte("apache-airflow-providers-airbyte") no container airlfow (attach shell do airflow-webserver)  - "pip install apache-airflow-providers-airbyte". Após isso restart container airflow webserver e verifica se airbyte está nos tipos de conexão - admin/connections
+    - Lib para conectar airbyte("apache-airflow-providers-airbyte") no container airlfow (attach shell do airflow-webserver)  - "pip install apache-airflow-providers-airbyte" ou inclui no .env do airflow a seguinte linha de código "_PIP_ADDITIONAL_REQUIREMENTS="apache-airflow-providers-airbyte"". Após isso restart container airflow webserver e verifica se airbyte está nos tipos de conexão - admin/connections
 
     - Criar a Docker network  - "docker network create modern-data-stack", para verificar os container dentro dessa rede: "docker network inspect modern-data-stack"
 
