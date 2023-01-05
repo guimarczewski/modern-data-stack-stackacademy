@@ -72,7 +72,7 @@ Transformação:
     - Visualização gráfica do modelo x
     - Teste de execução x
     - Commits, Branches, Pull Requests, Merges no Github x
-    - Obtenção do link de conexão com o Airbyte (Coloca o link do repositório git na aba transformation dentro da conexão no airbyte, para quando finalizar o job rodar a transformação dbt) x
+    - Obtenção do link de conexão com o Airbyte (Coloca o link do repositório git na aba transformation dentro da última conexão no airbyte, para quando finalizar o job rodar a transformação dbt) x
 
 
 Visualização:
@@ -90,9 +90,15 @@ Orquestração:
 
 - No Airflow:
 
-    - Criar a dag  
+    - Lib para conectar airbyte("apache-airflow-providers-airbyte") no container airlfow (attach shell do airflow-webserver)  - "pip install apache-airflow-providers-airbyte". Após isso restart container airflow webserver e verifica se airbyte está nos tipos de conexão - admin/connections
 
-    - Criar a Docker network
+    - Criar a Docker network  - "docker network create modern-data-stack", para verificar os container dentro dessa rede: "docker network inspect modern-data-stack"
+
+    - Colocar os containers dentro da rede modern-data-stack: "docker network connect modern-data-stack airbyte-proxy" e "docker network connect modern-data-stack airflow-airflow-webserver-1"
+
+    - Criar a connection airbyte_example(host airbyte_proxy e porta 8000)
+
+    - Criar a Dag em airflow/dags
 
     - Incluir nos composes a network criada
 
