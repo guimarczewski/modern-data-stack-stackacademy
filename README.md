@@ -75,17 +75,6 @@ Transformação:
     - Obtenção do link de conexão com o Airbyte (Coloca o link do repositório git na aba transformation dentro da última conexão no airbyte, para quando finalizar o job rodar a transformação dbt) x
 
 
-Visualização:
-
-- No Metabase:
-
-    - Conectar Metabase com o Snowflake 
-    - Criar uma Question  
-    - Criar um Dashboard 
-    - Adicionar uma Question 
-    - Visualizar o Resultado  
-
-
 Orquestração:
 
 - No Airflow:
@@ -102,13 +91,23 @@ Orquestração:
 
     - Incluir nos composes a network criada
 
-    - Setup Up no serviço
+    - Setup Up no serviço - ./setup.sh up/config/down
 
-    - Testar a conexao entre os containers do airflow e do airbyte
+    - Testar a conexao entre os containers do airflow e do airbyte 
 
     - Criar as conexões com o Airbyte através do script  
 
     - Testar a execução do pipeline  
+
+Visualização:
+
+- No Metabase:
+
+    - Conectar Metabase com o Snowflake 
+    - Criar uma Question  
+    - Criar um Dashboard 
+    - Adicionar uma Question 
+    - Visualizar o Resultado  
 
 
 Encerramento:
