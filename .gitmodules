@@ -1,0 +1,3 @@
+[submodule "dbt-model"]
+	path = dbt-model
+	url = https://github.com/guimarczewski/dbt-model.git
