@@ -25,7 +25,7 @@ Repositório para armazenar os artefatos do Pipeline utilizando Modern Data Stac
 Para ambiente de desenvolvimento desse projeto foi utilizado o Gitpod - https://gitpod.io/ - um ambiente de desenvolvimento em cloud que permite rodar o VS Code, seus plugins, Docker containers, integração Git/Github, entre outras funcionalidades.
 
 
-## Modelagem DBT
+## Modelagem DBT - Lineage Graph
 
 [![DBT](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/lineage_dbt.jpeg)]()
 
