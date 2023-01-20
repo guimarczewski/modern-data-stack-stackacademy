@@ -1,12 +1,8 @@
-# airbyte-dbt-airflow-snowflake-metabase
-Repositório para armazenar os artefatos do Pipeline utilizando Modern Data Stack com AirByte + DBT + Airflow + SnowFlake + Metabase
-
-Fonte de dados: https://health.google.com/covid-19/open-data/raw-data
-
+# Passo a passo para realização do projeto
 
 Tarefas:
 
-Infraestrutura:
+## Infraestrutura
 
 - Setup do ambiente de desenvolvimento gitpod.io https://gitpod.io (Hardware, Software - Linux, Python, Docker, Curl, Pip, Git, Npm, etc...)
 
@@ -41,7 +37,7 @@ user e senha foram setados no arquivo docker-compose.yaml)
     - Obter os links de conexão e nome da conta
 
 
-Extração:
+## Extração
 
 - No Airbyte:
 
@@ -52,7 +48,7 @@ Extração:
     - Testar as conexões
 
 
-Preparação:
+## Preparação
 
 - No Airbyte (Destination Loading Method):
 
@@ -60,7 +56,7 @@ Preparação:
     - Cloud Staging (Ambiente de Produção)
 
 
-Transformação:
+## Transformação
 
 - No Dbt:
 
@@ -77,7 +73,7 @@ Transformação:
     - Obtenção do link de conexão com o Airbyte (Coloca o link do repositório git na aba transformation dentro da última conexão no airbyte, para quando finalizar o job rodar a transformação dbt)
 
 
-Orquestração:
+## Orquestração
 
 - No Airflow:
 
@@ -101,7 +97,7 @@ Orquestração:
 
     - Testar a execução do pipeline  
 
-Visualização:
+## Visualização
 
 - No Metabase:
 
@@ -110,14 +106,3 @@ Visualização:
     - Criar um Dashboard 
     - Adicionar uma Question 
     - Visualizar o Resultado  
-
-
-Encerramento:
-
-- Material de Apoio:
-
-    - Links 
-
-    - Códigos fonte
-
-    - Apresentação
