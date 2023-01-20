@@ -1,10 +1,10 @@
 # Projeto Modern Data Stack
 
-Repositório para armazenar os artefatos do Pipeline utilizando Modern Data Stack com AirByte + DBT + Airflow + SnowFlake + Metabase
+Repositório para armazenar os artefatos do Pipeline utilizando Modern Data Stack realizado pela Stack Academy com AirByte + DBT + Airflow + SnowFlake + Metabase
 
 ## Arquitetura escolhida para o projeto
 
-[![Architecture](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/arquitetura.png)]()
+[![Architecture](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/arquitetura.PNG)]()
 
 
 - Fonte de dados: Google Covid-19 Open Data - https://health.google.com/covid-19/open-data/raw-data
