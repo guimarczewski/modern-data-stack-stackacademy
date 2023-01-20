@@ -6,18 +6,18 @@ Repositório para armazenar os artefatos do Pipeline utilizando Modern Data Stac
 
 - Airbyte: Deploy utilizando docker container. Utilizado para realizar a ingestão dos dados de covid disponíveis na web, em arquivos csv, no snowflake.
 
-- DBT: Repositório dbt-model contendo a transformação dos dados e separação entre staging e marts e criação da nova tabela covid19_model, resultante do agrupamento das tabelas disponibilizadas pelo Google.
+- DBT: Repositório dbt-model contendo a transformação dos dados e separação entre staging e marts e criação da nova tabela covid19_model, resultante do agrupamento das tabelas disponibilizadas pelo Google. [One Developer - ForeverFree]
 
-- Airflow: Deploy utilizando docker container. Utilizado para realizar a orquestração do carregamento airbyte-snowflake e DBT.
+- Airflow: Deploy utilizando docker container. Utilizado para realizar a orquestração do carregamento airbyte-snowflake e DBT. [Open Source]
 
 - Snowflake: Data Warehouse utilizado no projeto.
 
-- Metabase: Deploy utilizando docker container. Ferramenta de BI para visualização dos dados.
+- Metabase: Deploy utilizando docker container. Ferramenta de BI para visualização dos dados. [Open Source]
 
 
 ## Arquitetura escolhida para o projeto
 
-[![Status](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/arquitetura.png)]()
+[![Architecture](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/arquitetura.png)]()
 
 
 ## Ambiente de desenvolvimento
@@ -27,9 +27,11 @@ Para ambiente de desenvolvimento desse projeto foi utilizado o Gitpod - https://
 
 ## Modelagem DBT
 
-[![Status](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/lineage_dbt.jpeg)]()
+[![DBT](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/lineage_dbt.jpeg)]()
 
 
 ## Dashboard
 
-*Colocar imagem*
+[![Dashboard_day](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/metabase_day.PNG)]()
+
+[![Dashboard_night](https://github.com/guimarczewski/modern-data-stack-stackacademy/raw/main/images/metabase_night.PNG)]()
